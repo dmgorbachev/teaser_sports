@@ -3,188 +3,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sports.ru — Главная</title>
-  <link rel="stylesheet" href="css/style.css?v=4">
+  <title>Sports.ru</title>
+  <link rel="stylesheet" href="css/style.css?v=5">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
 </head>
 <body>
 
-  <!-- Top Bar -->
-  <div class="topbar">
-    <div class="topbar-inner">
-      <button class="menu-btn">☰</button>
-      <a href="/" class="brand">
-        <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#fff"/><text x="12" y="17" text-anchor="middle" font-size="13" font-weight="900" fill="#e80024" font-family="Arial">S</text></svg>
-        <span>Sports.ru</span>
-      </a>
-      <nav class="topnav">
-        <a href="#">Моя лента</a>
-        <a href="#">ЧМ-26</a>
-        <a href="#">Матчи</a>
-        <a href="#">Ставки</a>
-      </nav>
-      <div class="topbar-icons">
-        <button>🔍</button>
-        <button>🔔</button>
-        <div class="avatar">Д</div>
+  <!-- UIHeader -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-left">
+        <a href="/" class="logo">
+          <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#fff"/><text x="12" y="17" text-anchor="middle" font-size="13" font-weight="900" fill="#e80024" font-family="Arial">S</text></svg>
+          <span>Sports.ru</span>
+        </a>
+        <nav class="main-nav">
+          <a href="#">Главная</a>
+          <a href="#">Новости</a>
+          <a href="#">Трибуна</a>
+          <a href="#">Ставки</a>
+          <a href="#">Футбол</a>
+          <a href="#">Фигурка</a>
+          <a href="#">Баскет</a>
+          <a href="#">Теннис</a>
+          <a href="#">Бокс</a>
+          <a href="#">Авто</a>
+        </nav>
+      </div>
+      <div class="header-icons">
+        <button class="hdr-icon">🔍</button>
+        <button class="hdr-icon">🔔</button>
+        <button class="hdr-icon">💬</button>
+        <button class="hdr-icon">📱</button>
+        <div class="avatar-sm">Д</div>
       </div>
     </div>
-    <div class="progress"></div>
+  </header>
+
+  <!-- Scoreboard Bar -->
+  <div class="scoreboard">
+    <div class="score-inner">
+      <div class="score-item">
+        <span class="score-icon">⚽</span>
+        <span class="score-label">Чемпионат мира 2026</span>
+      </div>
+      <span class="score-dot">·</span>
+      <div class="score-match">
+        <span class="score-status">Завершен</span>
+        <span class="score-team">Бразилия</span>
+        <span class="score-goals">2-1</span>
+        <span class="score-team">Марокко</span>
+      </div>
+      <span class="score-dot">·</span>
+      <div class="score-match">
+        <span class="score-status">Завершен</span>
+        <span class="score-team">Бразилия</span>
+        <span class="score-goals">2-1</span>
+        <span class="score-team">Марокко</span>
+      </div>
+      <span class="score-dot">·</span>
+      <div class="score-match">
+        <span class="score-status">Завершен</span>
+        <span class="score-team">Бразилия</span>
+        <span class="score-goals">2-1</span>
+        <span class="score-team">Марокко</span>
+      </div>
+      <span class="score-dot">·</span>
+      <div class="score-item">
+        <span class="score-icon">🎾</span>
+        <span class="score-label">Ролан Гаррос</span>
+      </div>
+      <span class="score-dot">·</span>
+      <div class="score-match">
+        <span class="score-status">Завершен</span>
+        <span class="score-team">Бразилия</span>
+        <span class="score-goals">2-1</span>
+        <span class="score-team">Марокко</span>
+      </div>
+      <span class="score-dot">·</span>
+      <div class="score-match">
+        <span class="score-status">Завершен</span>
+        <span class="score-team">Бразилия</span>
+        <span class="score-goals">2-1</span>
+        <span class="score-team">Марокко</span>
+      </div>
+    </div>
   </div>
 
-  <div class="topsep"></div>
+  <!-- Branding Section -->
+  <section class="branding">
+    <div class="branding-inner">
+      <h1>Брендинг</h1>
+    </div>
+  </section>
 
-  <!-- Sport Nav -->
-  <nav class="sportnav">
-    <a href="#" class="active">Футбол</a>
-    <a href="#">Фигурка</a>
-    <a href="#">Хоккей</a>
-    <a href="#">Баскет</a>
-    <a href="#">Теннис</a>
-    <a href="#">Бокс</a>
-    <a href="#">Авто</a>
-    <a href="#">MMA</a>
-    <a href="#">Здоровье</a>
-    <a href="#">Кибер</a>
-  </nav>
-
-  <!-- Main Layout -->
-  <div class="page">
-    <main class="feed">
-
-      <!-- Tribune -->
-      <div class="tribune">
-        <article class="tribune-card tribune-lead">
-          <div class="tribune-pic">
-            <span class="tribune-label">Трибуна</span>
-          </div>
-          <div class="tribune-info">
-            <h2>Михаил Сергачев запустил блог на&nbsp;Спортсе! И&nbsp;начал красивой историей своего лета</h2>
-            <p>Свадьба, детство и «Мираж».</p>
-            <div class="tribune-actions">
-              <span class="vote-up">+148</span>
-              <span class="vote-fire">🔥 29</span>
-            </div>
-          </div>
-        </article>
-        <article class="tribune-card">
-          <div class="tribune-pic" style="background: linear-gradient(135deg, #3a3040, #4a4050);"></div>
-          <div class="tribune-info">
-            <h3>Какой я увидел Америку: пугающие бездомные, самолеты-маршрутки и&nbsp;свобода</h3>
-            <p>Владимир Иванов после трех недель в США.</p>
-            <div class="tribune-actions"><span class="vote-up">+33</span><span class="vote-fire">🔥 18</span></div>
-          </div>
-        </article>
-        <article class="tribune-card">
-          <div class="tribune-pic" style="background: linear-gradient(135deg, #4a3520, #5a4530);"></div>
-          <div class="tribune-info">
-            <h3>Я потратил 2,5 млн на поездку в&nbsp;США ради ЧМ 💰</h3>
-            <p>Рассказ тиктокера.</p>
-            <div class="tribune-actions"><span class="vote-down">-499</span><span class="vote-fire">🔥 158</span></div>
-          </div>
-        </article>
-      </div>
-
-      <!-- News -->
-      <section class="news">
-        <div class="news-head">
-          <h4>ГЛАВНЫЕ НОВОСТИ</h4>
-        </div>
-        <div class="news-items">
-          <article class="news-row">
-            <span class="news-cat">Футбол</span>
-            <time>13:17</time>
-            <a href="#">«Манчестер Юнайтед» за 41 млн евро покупает Тилеманса из «Астон Виллы»</a>
-          </article>
-          <article class="news-row">
-            <span class="news-cat">Футбол</span>
-            <time>13:07</time>
-            <a href="#">Трушечкин прокомментирует матч Испании и Франции в полуфинале ЧМ</a>
-          </article>
-          <article class="news-row">
-            <span class="news-cat">Футбол</span>
-            <time>13:00</time>
-            <span class="news-tag">Конкурс</span>
-            <a href="#">Тот самый момент ЧМ до сих пор перед глазами? Пишите и получите приз</a>
-          </article>
-          <article class="news-row">
-            <span class="news-cat">Футбол</span>
-            <time>12:56</time>
-            <a href="#">Лебедев об отказе «Родины» от логотипа авторства его студии</a>
-            <span class="news-fire">🔥 37</span>
-          </article>
-          <article class="news-row">
-            <span class="news-cat">Футбол</span>
-            <time>12:33</time>
-            <a href="#">«Это укоренившаяся ненависть к Франции». Министр о словах Рахоя</a>
-            <span class="news-fire">🔥 50</span>
-          </article>
-          <article class="news-row">
-            <span class="news-cat">Экстрим</span>
-            <time>12:06</time>
-            <a href="#">Альпинист Набиев, взошедший на Эверест без ног: «Таких свидетельств нет»</a>
-            <span class="news-fire">🔥 18</span>
-          </article>
-          <article class="news-row">
-            <span class="news-cat">Футбол</span>
-            <time>12:05</time>
-            <a href="#">«Родина» о логотипе от студии Лебедева: «Не будет применяться»</a>
-            <span class="news-fire">🔥 78</span>
-          </article>
-          <article class="news-row">
-            <span class="news-cat">Футбол</span>
-            <time>11:30</time>
-            <a href="#">Студия Лебедева сделала логотип «Родины» — в виде запятой</a>
-            <span class="news-fire">🔥 181</span>
-          </article>
-          <article class="news-row">
-            <span class="news-cat">Футбол</span>
-            <time>11:29</time>
-            <a href="#">Морган: «Смехотворно говорить, как Англии остановить Месси»</a>
-            <span class="news-fire">🔥 150</span>
-          </article>
-          <article class="news-row">
-            <span class="news-cat">Футбол</span>
-            <time>11:20</time>
-            <a href="#">«Откровенный расизм. Они пытаются разозлить французскую сборную»</a>
-            <span class="news-fire">🔥 109</span>
-          </article>
-        </div>
-        <a href="#" class="news-more">ПОКАЗАТЬ БОЛЬШЕ</a>
-      </section>
-    </main>
-
-    <aside class="sidebar">
-      <div class="side-box">
-        <h4>МАТЧИ СЕГОДНЯ</h4>
-        <div class="match-row">
-          <span>Испания — Франция</span>
-          <time>21:00</time>
-        </div>
-        <div class="match-row">
-          <span>Англия — Аргентина</span>
-          <time>23:00</time>
-        </div>
-      </div>
-      <div class="side-box">
-        <h4>ТРАНСФЕРЫ</h4>
-        <div class="transfer-row">
-          <span>Тилеманс → МЮ</span>
-          <strong>€41M</strong>
-        </div>
-        <div class="transfer-row">
-          <span>Холанд → Реал</span>
-          <strong>€200M</strong>
-        </div>
-        <div class="transfer-row">
-          <span>Мбаппе → Арсенал</span>
-          <strong class="rumor">слух</strong>
-        </div>
-      </div>
-    </aside>
+  <!-- Hero Image -->
+  <div class="hero-image">
+    <img src="https://placehold.co/1920x942/2a2a3a/ffffff?text=Sports+Photography" alt="">
   </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-col">
+          <a href="#">Про нас</a>
+          <a href="#">Редакция</a>
+          <a href="#">Контакты</a>
+        </div>
+        <div class="footer-col">
+          <a href="#">Вакансии</a>
+          <a href="#">Реклама</a>
+          <a href="#">Блог поддержки</a>
+        </div>
+        <div class="footer-col">
+          <a href="#">Административный блог</a>
+          <a href="#">Пользовательское соглашение</a>
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+        <div class="footer-col">
+          <a href="#">Информация для правообладателей</a>
+        </div>
+      </div>
+      <div class="footer-apps">
+        <div class="app-btn">
+          <small>Загрузите в</small>
+          <strong>App Store</strong>
+        </div>
+        <div class="app-btn">
+          <small>Загрузите в</small>
+          <strong>Google Play</strong>
+        </div>
+        <a href="#" class="all-apps">Все приложения</a>
+        <div class="app-btn">
+          <small>Загрузите в</small>
+          <strong>RuStore</strong>
+        </div>
+        <div class="app-btn">
+          <small>Загрузите в</small>
+          <strong>AppGallery</strong>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Если вы нашли ошибку, сообщите нам об этом: <a href="mailto:support@sports.ru">support@sports.ru</a></p>
+        <p>На Sports.ru применяются рекомендательные технологии (информационные технологии предоставления информации на основе сбора, систематизации и анализа сведений, относящихся к предпочтениям пользователей сети «Интернет», находящихся на территории РФ)</p>
+        <p>1998 — 2023 © Sports.ru <span>|</span> 18+</p>
+      </div>
+    </div>
+    <div class="footer-mobile-link">
+      <a href="#">Мобильная версия</a>
+    </div>
+  </footer>
 
 </body>
 </html>
