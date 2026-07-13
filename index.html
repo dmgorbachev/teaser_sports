@@ -3,34 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Спорт: футбол, хоккей, баскетбол, теннис, бокс — Sports.ru</title>
+  <title>Sports.ru — Главная</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <div class="top-bar">
-    <div class="top-inner">
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="topbar-inner">
       <button class="menu-btn">☰</button>
-      <a href="/" class="logo-link">
-        <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#fff"/><text x="12" y="17" text-anchor="middle" font-size="14" font-weight="900" fill="#e80024" font-family="Arial">S</text></svg>
-        <span class="logo-text">Sports.ru</span>
+      <a href="/" class="brand">
+        <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#fff"/><text x="12" y="17" text-anchor="middle" font-size="13" font-weight="900" fill="#e80024" font-family="Arial">S</text></svg>
+        <span>Sports.ru</span>
       </a>
-      <nav class="top-nav">
+      <nav class="topnav">
         <a href="#">Моя лента</a>
         <a href="#">ЧМ-26</a>
         <a href="#">Матчи</a>
         <a href="#">Ставки</a>
       </nav>
-      <div class="top-right">
-        <button class="icon-btn">🔍</button>
-        <button class="icon-btn">🔔</button>
-        <button class="avatar-btn">А</button>
+      <div class="topbar-icons">
+        <button>🔍</button>
+        <button>🔔</button>
+        <div class="avatar">Д</div>
       </div>
     </div>
-    <div class="progress-bar"></div>
+    <div class="progress"></div>
   </div>
 
-  <nav class="sport-nav">
+  <div class="topsep"></div>
+
+  <!-- Sport Nav -->
+  <nav class="sportnav">
     <a href="#" class="active">Футбол</a>
     <a href="#">Фигурка</a>
     <a href="#">Хоккей</a>
@@ -38,141 +42,142 @@
     <a href="#">Теннис</a>
     <a href="#">Бокс</a>
     <a href="#">Авто</a>
-    <a href="#">Игровая</a>
+    <a href="#">MMA</a>
     <a href="#">Здоровье</a>
-    <a href="#">Медиафутбол</a>
-    <a href="#">Прожектор</a>
+    <a href="#">Кибер</a>
   </nav>
 
-  <div class="layout">
-    <main class="main-col">
+  <!-- Main Layout -->
+  <div class="page">
+    <main class="feed">
+
       <!-- Tribune -->
-      <section class="tribune-hero">
-        <article class="tribune-card tribune-main">
-          <div class="tribune-img" style="background: linear-gradient(135deg, #2a2a3a, #3a3a5a);">
-            <span class="tribune-badge">Трибуна</span>
+      <div class="tribune">
+        <article class="tribune-card tribune-lead">
+          <div class="tribune-pic">
+            <span class="tribune-label">Трибуна</span>
           </div>
-          <div class="tribune-body">
-            <h2 class="tribune-title">Михаил Сергачев запустил блог на Спортсе! И начал красивой историей своего лета</h2>
-            <p class="tribune-sub">Свадьба, детство и «Мираж».</p>
-            <div class="tribune-meta">
-              <span class="meta-plus">+148</span>
-              <span class="meta-fire">🔥 29</span>
+          <div class="tribune-info">
+            <h2>Михаил Сергачев запустил блог на&nbsp;Спортсе! И&nbsp;начал красивой историей своего лета</h2>
+            <p>Свадьба, детство и «Мираж».</p>
+            <div class="tribune-actions">
+              <span class="vote-up">+148</span>
+              <span class="vote-fire">🔥 29</span>
             </div>
           </div>
         </article>
         <article class="tribune-card">
-          <div class="tribune-img" style="background: linear-gradient(135deg, #3a2a3a, #4a3a5a);"></div>
-          <div class="tribune-body">
-            <h3 class="tribune-title">Какой я увидел Америку: пугающие бездомные, самолеты-маршрутки и свобода</h3>
-            <p class="tribune-sub">Владимир Иванов после трех недель в США.</p>
-            <div class="tribune-meta"><span class="meta-plus">+33</span><span class="meta-fire">🔥 18</span></div>
+          <div class="tribune-pic" style="background: linear-gradient(135deg, #3a3040, #4a4050);"></div>
+          <div class="tribune-info">
+            <h3>Какой я увидел Америку: пугающие бездомные, самолеты-маршрутки и&nbsp;свобода</h3>
+            <p>Владимир Иванов после трех недель в США.</p>
+            <div class="tribune-actions"><span class="vote-up">+33</span><span class="vote-fire">🔥 18</span></div>
           </div>
         </article>
         <article class="tribune-card">
-          <div class="tribune-img" style="background: linear-gradient(135deg, #4a3a2a, #3a4a2a);"></div>
-          <div class="tribune-body">
-            <h3 class="tribune-title">Я потратил 2,5 млн на поездку в США ради ЧМ 💰</h3>
-            <p class="tribune-sub">Рассказ тиктокера.</p>
-            <div class="tribune-meta"><span class="meta-minus">-499</span><span class="meta-fire">🔥 158</span></div>
+          <div class="tribune-pic" style="background: linear-gradient(135deg, #4a3520, #5a4530);"></div>
+          <div class="tribune-info">
+            <h3>Я потратил 2,5 млн на поездку в&nbsp;США ради ЧМ 💰</h3>
+            <p>Рассказ тиктокера.</p>
+            <div class="tribune-actions"><span class="vote-down">-499</span><span class="vote-fire">🔥 158</span></div>
           </div>
         </article>
-      </section>
+      </div>
 
-      <!-- News Feed -->
-      <section class="news-section">
-        <div class="news-header">
-          <h3>ГЛАВНЫЕ НОВОСТИ</h3>
+      <!-- News -->
+      <section class="news">
+        <div class="news-head">
+          <h4>ГЛАВНЫЕ НОВОСТИ</h4>
         </div>
-        <div class="news-list">
-          <article class="news-item">
+        <div class="news-items">
+          <article class="news-row">
             <span class="news-cat">Футбол</span>
-            <time class="news-time">13:17</time>
-            <a href="#" class="news-link">«Манчестер Юнайтед» за 41 млн евро покупает Тилеманса из «Астон Виллы»</a>
+            <time>13:17</time>
+            <a href="#">«Манчестер Юнайтед» за 41 млн евро покупает Тилеманса из «Астон Виллы»</a>
           </article>
-          <article class="news-item">
+          <article class="news-row">
             <span class="news-cat">Футбол</span>
-            <time class="news-time">13:07</time>
-            <a href="#" class="news-link">Трушечкин прокомментирует матч Испании и Франции, Шнякин – игру Англии и Аргентины</a>
+            <time>13:07</time>
+            <a href="#">Трушечкин прокомментирует матч Испании и Франции в полуфинале ЧМ</a>
           </article>
-          <article class="news-item">
+          <article class="news-row">
             <span class="news-cat">Футбол</span>
-            <time class="news-time">13:00</time>
-            <span class="news-label">Конкурс</span>
-            <a href="#" class="news-link">Тот самый момент ЧМ до сих пор перед глазами? Пишите о нем и получите шанс на приз</a>
+            <time>13:00</time>
+            <span class="news-tag">Конкурс</span>
+            <a href="#">Тот самый момент ЧМ до сих пор перед глазами? Пишите и получите приз</a>
           </article>
-          <article class="news-item">
+          <article class="news-row">
             <span class="news-cat">Футбол</span>
-            <time class="news-time">12:56</time>
-            <a href="#" class="news-link">Лебедев об отказе «Родины» от логотипа авторства его студии</a>
+            <time>12:56</time>
+            <a href="#">Лебедев об отказе «Родины» от логотипа авторства его студии</a>
             <span class="news-fire">🔥 37</span>
           </article>
-          <article class="news-item">
+          <article class="news-row">
             <span class="news-cat">Футбол</span>
-            <time class="news-time">12:33</time>
-            <a href="#" class="news-link">Министр Франции о словах Рахоя: «Это укоренившаяся ненависть»</a>
+            <time>12:33</time>
+            <a href="#">«Это укоренившаяся ненависть к Франции». Министр о словах Рахоя</a>
             <span class="news-fire">🔥 50</span>
           </article>
-          <article class="news-item">
+          <article class="news-row">
             <span class="news-cat">Экстрим</span>
-            <time class="news-time">12:06</time>
-            <a href="#" class="news-link">Альпинист Набиев, взошедший на Эверест без ног: «Таких свидетельств нет»</a>
+            <time>12:06</time>
+            <a href="#">Альпинист Набиев, взошедший на Эверест без ног: «Таких свидетельств нет»</a>
             <span class="news-fire">🔥 18</span>
           </article>
-          <article class="news-item">
+          <article class="news-row">
             <span class="news-cat">Футбол</span>
-            <time class="news-time">12:05</time>
-            <a href="#" class="news-link">«Родина» о логотипе от студии Лебедева: «Не будет применяться»</a>
+            <time>12:05</time>
+            <a href="#">«Родина» о логотипе от студии Лебедева: «Не будет применяться»</a>
             <span class="news-fire">🔥 78</span>
           </article>
-          <article class="news-item">
+          <article class="news-row">
             <span class="news-cat">Футбол</span>
-            <time class="news-time">11:30</time>
-            <a href="#" class="news-link">Студия Артемия Лебедева разработала логотип для «Родины» — в виде запятой</a>
+            <time>11:30</time>
+            <a href="#">Студия Лебедева сделала логотип «Родины» — в виде запятой</a>
             <span class="news-fire">🔥 181</span>
           </article>
-          <article class="news-item">
+          <article class="news-row">
             <span class="news-cat">Футбол</span>
-            <time class="news-time">11:29</time>
-            <a href="#" class="news-link">Морган о полуфинале: «Смехотворно говорить, как Англии остановить Месси»</a>
+            <time>11:29</time>
+            <a href="#">Морган: «Смехотворно говорить, как Англии остановить Месси»</a>
             <span class="news-fire">🔥 150</span>
           </article>
-          <article class="news-item">
+          <article class="news-row">
             <span class="news-cat">Футбол</span>
-            <time class="news-time">11:20</time>
-            <a href="#" class="news-link">«Откровенный расизм. Они пытаются разозлить французскую сборную»</a>
+            <time>11:20</time>
+            <a href="#">«Откровенный расизм. Они пытаются разозлить французскую сборную»</a>
             <span class="news-fire">🔥 109</span>
           </article>
         </div>
-        <a href="#" class="show-more">ПОКАЗАТЬ БОЛЬШЕ</a>
+        <a href="#" class="news-more">ПОКАЗАТЬ БОЛЬШЕ</a>
       </section>
     </main>
 
     <aside class="sidebar">
-      <div class="side-block">
-        <h3>МАТЧИ СЕГОДНЯ</h3>
-        <div class="match-item">
+      <div class="side-box">
+        <h4>МАТЧИ СЕГОДНЯ</h4>
+        <div class="match-row">
           <span>Испания — Франция</span>
-          <span class="match-time">21:00</span>
+          <time>21:00</time>
         </div>
-        <div class="match-item">
+        <div class="match-row">
           <span>Англия — Аргентина</span>
-          <span class="match-time">23:00</span>
+          <time>23:00</time>
         </div>
       </div>
-      <div class="side-block">
-        <h3>ТРАНСФЕРЫ</h3>
-        <div class="transfer-item">
+      <div class="side-box">
+        <h4>ТРАНСФЕРЫ</h4>
+        <div class="transfer-row">
           <span>Тилеманс → МЮ</span>
-          <span class="transfer-fee">€41M</span>
+          <strong>€41M</strong>
         </div>
-        <div class="transfer-item">
+        <div class="transfer-row">
           <span>Холанд → Реал</span>
-          <span class="transfer-fee">€200M</span>
+          <strong>€200M</strong>
         </div>
-        <div class="transfer-item">
+        <div class="transfer-row">
           <span>Мбаппе → Арсенал</span>
-          <span class="transfer-fee">слух</span>
+          <strong class="rumor">слух</strong>
         </div>
       </div>
     </aside>
